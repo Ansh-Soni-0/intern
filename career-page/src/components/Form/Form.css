@@ -1,0 +1,145 @@
+.form {
+  width: 35vw;
+  height: 60vh;
+  background: rgb(236, 236, 236);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  gap: 20px;
+}
+
+.fullname,
+.email {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: gray;
+}
+
+.fullname input,
+.email input {
+  outline: none;
+  border: none;
+  height: 2rem;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.numberDOB {
+  width: 80%;
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+}
+.dob {
+  display: flex;
+  flex-direction: column;
+  width: 10rem;
+}
+
+.number input,
+.dob input {
+  outline: none;
+  border: none;
+  height: 2rem;
+  padding: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.resume {
+  width: 80%;
+  color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.resume label{
+    display: flex;
+    width: 15%;
+}
+.resume label img {
+  width: 80px;
+  cursor: pointer;
+}
+
+.submit-button {
+  width: 7rem;
+  height: 2rem;
+  outline: none;
+  border: none;
+  background: #000000;
+  color: white;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #313131;
+}
+
+.file-name {
+    display: flex;
+    gap: 5px;
+    color: #e70f0f;
+    font-weight: 500;
+    font-size: 16px;
+    font-size: 20px;
+}
+
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+  .form {
+    width: 90vw;
+    height: auto;
+    padding: 20px 0;
+  }
+
+  .numberDOB {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .number,
+  .dob {
+    width: 80%;
+  }
+
+  .submit-button {
+    width: 80%;
+  }
+}
+
+
+/* Medium screens (tablets, small laptops) */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .form {
+        width: 80vw;
+        height: auto;
+        padding: 30px 0;
+    }
+
+    .numberDOB {
+        gap: 20px;
+    }
+
+    .number,
+    .dob {
+        width: 48%;
+    }
+
+    .submit-button {
+        width: 10rem;
+    }
+}
